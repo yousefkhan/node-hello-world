@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha",
-    "start": "node app.js"
+    "start": "node app.js",
+    "stop": "pkill --signal SIGINT app"
   },
   "author": "ykhan",
   "license": "ISC",
