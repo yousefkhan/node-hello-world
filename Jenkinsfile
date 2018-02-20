@@ -12,10 +12,6 @@ pipeline {
                 npm test
             }
         }
-        stage('Deploy') {
-            steps {
-                pm2 restart all
-            }
-        }
+
     }
 }
