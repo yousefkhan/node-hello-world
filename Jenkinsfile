@@ -14,8 +14,8 @@ pipeline {
         }
         stage('Deploy') {
                     steps {
-                        sh 'pm2 stop app'
-                        sh 'pm2 start app.js'
+                        sh 'pm2 delete -s app || :'
+                        sh 'pm2 start ./app.js --name=app'
                     }
               }
 
