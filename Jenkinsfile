@@ -16,6 +16,7 @@ pipeline {
                     steps {
                         sh 'pm2 delete -s app || :'
                         sh 'pm2 start ./app.js --name=app'
+
                     }
               }
 
